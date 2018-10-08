@@ -50,7 +50,7 @@ const appRoutes: Routes = [
     ProjectDialogComponent,
   ],
   imports: [
-    RouterModule.forRoot(appRoutes, {useHash: true}),
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
