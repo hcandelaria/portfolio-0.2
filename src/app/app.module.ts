@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { enableProdMode } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,6 +25,8 @@ import { ProjectDialogComponent } from './project-dialog/project-dialog.componen
 import { FooterComponent } from './footer/footer.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
 
+enableProdMode();
+
 const appRoutes: Routes = [
   { path: '',       component: HomePageComponent },
   { path: 'about',  component: AboutPageComponent },
@@ -47,7 +50,7 @@ const appRoutes: Routes = [
     ProjectDialogComponent,
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, {useHash: true}),
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
