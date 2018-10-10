@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { enableProdMode } from '@angular/core';
+import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -24,15 +25,18 @@ import { PortfolioPageComponent } from './portfolio-page/portfolio-page.componen
 import { ProjectDialogComponent } from './project-dialog/project-dialog.component';
 import { FooterComponent } from './footer/footer.component';
 import { SkillsPageComponent } from './skills-page/skills-page.component';
+// import { PageNotFoundComponent } from './PageNotFound/Page-Not-Found.component';
 
 enableProdMode();
 
 const appRoutes: Routes = [
-  { path: '',       component: HomePageComponent },
-  { path: 'about',  component: AboutPageComponent },
-  { path: 'skills',  component: SkillsPageComponent },
+  { path: "", redirectTo: "home", pathMatch: "full"},
+  { path: 'home',       component: HomePageComponent },
+  { path: 'about',      component: AboutPageComponent },
+  { path: 'skills',     component: SkillsPageComponent },
   { path: 'portfolio',  component: PortfolioPageComponent },
-  { path: 'resume', component: ResumePageComponent },
+  { path: 'resume',     component: ResumePageComponent },
+  // { path: '**',         component: PageNotFoundComponent },
 ];
 @NgModule({
   declarations: [
@@ -50,7 +54,10 @@ const appRoutes: Routes = [
     ProjectDialogComponent,
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: false } // <-- debugging purposes only
+    ),
     BrowserModule,
     BrowserAnimationsModule,
     LayoutModule,
@@ -62,7 +69,9 @@ const appRoutes: Routes = [
     MatDialogModule,
     MatCardModule,
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: './' },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
