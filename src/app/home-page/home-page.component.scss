@@ -2,7 +2,7 @@
 
 .welcome {
   svg {
-	width: 50vw;
+	width: 60vw;
 	margin-left: 25%;
   height: auto;
   fill: none;
@@ -63,3 +63,10 @@
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
+// @media only screen and (max-width: 375px) {
+// 	.welcome {
+// 		svg {
+// 			width: 600px
+// 		}
+// 	}
+// }
