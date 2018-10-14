@@ -1,12 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
-
+// @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@font-face {
+  font-family: Merkur;
+  src: url('../../assets/font/Merkur.otf') format("opentype");
+}
 .welcome {
   svg {
 	width: 60vw;
 	margin-left: 25%;
   height: auto;
   fill: none;
-  stroke: #000000;
+  stroke: #FFFFFF;
   stroke-width: 4;
 	text-align: center;
 
@@ -20,7 +23,7 @@
       @for $i from 1 through 7 {
 
         &:nth-of-type(#{$i}) {
-          animation: draw 300ms #{$i * 150}ms forwards;
+          animation: draw 300ms #{$i * 250}ms forwards;
         }
 
       }
@@ -45,7 +48,7 @@
 			}
 		}
 		mat-icon{
-			color: #373D48;
+      color: #FFFFFF;
 			font-size: 5rem;
 		}
     }

@@ -15,7 +15,8 @@ import {
   MatIconModule,
   MatListModule,
   MatDialogModule,
-  MatCardModule 
+  MatCardModule,
+  MatGridListModule
 } from '@angular/material';
 
 import { HomePageComponent } from './home-page/home-page.component';
@@ -68,6 +69,7 @@ const appRoutes: Routes = [
     MatListModule,
     MatDialogModule,
     MatCardModule,
+    MatGridListModule,
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },

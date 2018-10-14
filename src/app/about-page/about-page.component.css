@@ -1,0 +1,31 @@
+p {
+  color: #FFFFFF;
+}
+
+img {
+  border-width: 3px;
+  border-color: #FFFFFF;
+  border-style: solid;
+  -webkit-animation: flip 1s;
+  animation: flip 2s;
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+
+  to {
+    transform: rotateY(0deg)
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(360deg)
+  }
+
+  to {
+    transform: rotateY(0deg)
+  }
+}
