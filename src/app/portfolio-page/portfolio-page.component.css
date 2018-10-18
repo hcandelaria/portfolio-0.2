@@ -1,5 +1,10 @@
 #portfolio{
     overflow: auto;
-    overflow-y: hidden;    
-    height: 90vh;
+    overflow-y: scroll;
+    height: 89vh;
+    box-sizing: content-box;
+}
+#portfolio::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }

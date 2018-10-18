@@ -34,21 +34,25 @@ a {
   position: sticky;
   top: 0;
 }
-#content {
-  img {
-    opacity: 1;
-    position: absolute;
-    height: 90vh;
-    width: 100%;
-    z-index: -1;
-  }
+#backgroudImg {
+  background-image: url('../../assets/img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  // img {
+  //   opacity: 1;
+  //   position: absolute;
+  //   height: 90vh;
+  //   width: 100%;
+  //   z-index: -1;
+  // }
 }
-div{
-  .container.center-align{
-    margin-top: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 90vh;
-  }
+#content{
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  overflow: hidden;
 }
+
