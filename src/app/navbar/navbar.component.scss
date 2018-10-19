@@ -4,8 +4,9 @@
   font-family: Merkur;
   src: url('../../assets/font/Merkur.otf') format("opentype");
 }
+$mainColor: #FFFFFF;
 a {
-  color: #FFFFFF;
+  color: $mainColor;
   margin: 0 5px;
 }
 // .drawerIcon{
@@ -14,7 +15,7 @@ a {
 // }
 .brand-logo{
   font-family: 'Merkur', cursive;
-  color:#95555A;
+  color:$mainColor;
   // border: 10px solid #373D48;
   // background-color: #373D48;
   font-size: 5rem;

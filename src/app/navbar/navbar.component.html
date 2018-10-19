@@ -9,9 +9,9 @@
       <a mat-list-item routerLink="/about" >
         <mat-icon class="drawerIcon">account_circle</mat-icon>About
       </a>
-      <!-- <a mat-list-item routerLink="/skills" >
+      <a mat-list-item routerLink="/skills" >
         <mat-icon class="drawerIcon">build</mat-icon>Skills
-      </a> -->
+      </a>
       <a mat-list-item routerLink="/portfolio" >
         <mat-icon class="drawerIcon">apps</mat-icon>Portfolio
       </a>
@@ -27,6 +27,9 @@
         <div class="row hide-on-small-only">
           <a [routerLink]="['/about']" routerLinkActive="router-link-active">
             <button mat-stroked-button>About</button>
+          </a>
+          <a [routerLink]="['/skills']" routerLinkActive="router-link-active">
+            <button mat-stroked-button>Skills</button>
           </a>
           <a [routerLink]="['/portfolio']" routerLinkActive="router-link-active">
             <button mat-stroked-button>Portfolio</button>

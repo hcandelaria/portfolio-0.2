@@ -3,14 +3,18 @@
   font-family: Merkur;
   src: url('../../assets/font/Merkur.otf') format("opentype");
 }
-$secondaryColor: #95555A;
+$maincolor: #FFFFFF;
 .welcome{
   h1{
-    color: $secondaryColor;
+    color: $maincolor;
     font-family: Merkur;
-    animation-name: fade-in;
-    animation-duration: 1s;
+    // animation-name: fade-in;
+    // animation-duration: 1s;
     font-size: 20vh;
+    -webkit-animation: flickerAnimation 3s infinite;
+    -moz-animation: flickerAnimation 3s infinite;
+    -o-animation: flickerAnimation 3s infinite;
+    animation: flickerAnimation 3s infinite;
   }
 }
 // .welcome {
@@ -52,13 +56,13 @@ $secondaryColor: #95555A;
       animation-name: fade-in;
       animation-fill-mode: both;
       animation-duration: 1s;
-			@for $i from 1 through 3 {
+			@for $i from 1 through 4 {
 				&:nth-of-type(#{$i}) {
 					animation-delay: #{$i}s;
 			}
 		}
 		mat-icon{
-      color: #FFFFFF;
+      color: $maincolor;
 			font-size: 5rem;
 		}
     }
@@ -76,14 +80,32 @@ $secondaryColor: #95555A;
 	0% { opacity: 0; }
 	100% { opacity: 1; }
 }
-@keyframes fade-out {
-	0% { opacity: 1; }
-	100% { opacity: 0; }
-}
+
 @media only screen and (max-width: 375px) {
   .welcome{
     h1{
       font-size: 10vh;
     }
   }
+}
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
