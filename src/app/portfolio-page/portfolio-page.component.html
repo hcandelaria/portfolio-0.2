@@ -1,10 +1,9 @@
 <div id="portfolio" class="container-fluid">
   <div class="row">
-    <div class="col s12 m6" (click)="openDialog($event, project)" *ngFor='let project of projects'>
-      <mat-card>
-        <img  mat-card-image src="./assets/img/{{project.img}}" alt={{project.name}}>
-      </mat-card>
-      <br>
+    <div class="project col s12 m6" (click)="openDialog($event, project)" *ngFor='let project of projects'>
+      <div>
+        <img class="responsive-img" src="./assets/img/{{project.img}}" alt={{project.name}}>
+      </div>
     </div>
   </div>
 </div>

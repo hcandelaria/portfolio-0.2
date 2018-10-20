@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { enableProdMode } from '@angular/core';
-import { APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common';
+import { APP_BASE_HREF } from '@angular/common';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { RouterModule, Routes } from '@angular/router';
+
 import {
   MatToolbarModule,
   MatButtonModule,
@@ -16,8 +17,18 @@ import {
   MatListModule,
   MatDialogModule,
   MatCardModule,
-  MatGridListModule
+  MatGridListModule,
+  MatChipsModule
+
 } from '@angular/material';
+
+import {
+  trigger,
+  state,
+  style,
+  animate,
+  transition,
+} from '@angular/animations';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { ResumePageComponent } from './resume-page/resume-page.component';
@@ -70,6 +81,7 @@ const appRoutes: Routes = [
     MatDialogModule,
     MatCardModule,
     MatGridListModule,
+    MatChipsModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },

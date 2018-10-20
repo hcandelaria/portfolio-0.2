@@ -1,5 +1,14 @@
+$primaryColor: #373d48;
+
 .categories{
     a{
         margin: 0 1rem;
     }
+}
+img{
+    width: 50%;
+}
+.mat-chip.mat-primary.mat-standard-chip.ng-star-inserted{
+    background-color: $primaryColor;
+    color: white;
 }

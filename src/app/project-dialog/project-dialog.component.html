@@ -1,26 +1,26 @@
-<div id="dialog" class="container-fluid">
-  <div id="projects" class="s12 projects">
-    <div class="gallery-curve-wrapper center-align">
-      <div class="gallery-cover gray container">
-        <img class="responsive-img" src="./assets/img/{{data.img}}" alt={{data.name}}>
+<div id="dialog">
+  <div class="wrapper center-align">
+    <div class="product-img">
+      <img src="./assets/img/{{data.img}}" alt={{data.name}}>
+    </div>
+    <div class="product-info">
+      <div class="product-text">
+        <h1>{{data.name}}</h1>
+        <h2></h2>
+        <p class="flow-text description left-align">{{data.description}}</p>
       </div>
-      <div class="gallery-body">
-        <div class="title-wrapper">
-          <h3><b>
-            {{data.name}}
-          </b></h3>
-        </div>
-        <br>
-        <p class="flow-text description left-align">
-          {{data.description}}
-        </p>
-        <br>
-        <br>
-      </div>
+      <mat-chip-list color="primary">
+        <h5>
+          Stack:
+        </h5>
+        <mat-chip *ngFor="let tech of data.stack">{{tech}}</mat-chip>
+      </mat-chip-list>
+      <br>
       <div class="categories gallery-action">
         <a href={{data.links[0]}} target="_black"><button mat-raised-button color="primary">DEMO</button></a>
         <a href={{data.links[1]}} target="_black"><button mat-raised-button color="primary">GitHub</button></a>
       </div>
+
     </div>
   </div>
 </div>
