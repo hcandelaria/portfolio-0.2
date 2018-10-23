@@ -8,8 +8,7 @@ $maincolor: #FFFFFF;
   h1{
     color: $maincolor;
     font-family: Merkur;
-    // animation-name: fade-in;
-    // animation-duration: 1s;
+
     font-size: 20vh;
     -webkit-animation: flickerAnimation 3s infinite;
     -moz-animation: flickerAnimation 3s infinite;
@@ -17,74 +16,11 @@ $maincolor: #FFFFFF;
     animation: flickerAnimation 3s infinite;
   }
 }
-// .welcome {
-//   svg {
-// 	width: 60vw;
-// 	margin-left: 25%;
-//   height: auto;
-//   fill: none;
-//   stroke: #FFFFFF;
-//   stroke-width: 4;
-// 	text-align: center;
-
-//     tspan>tspan {
-// 		text-align: center;
-// 		margin-left: auto;
-// 		margin-right: auto;
-//       	stroke-dasharray: 1500;
-//       	stroke-dashoffset: -1500;
-
-//       @for $i from 1 through 7 {
-
-//         &:nth-of-type(#{$i}) {
-//           animation: draw 300ms #{$i * 250}ms forwards;
-//         }
-
-//       }
-
-//     }
-
-//   }
-
-// }
-.about-links {
-  div {
-	
-    a {
-			color: #000000;
-      margin: 0 2rem;
-      animation-name: fade-in;
-      animation-fill-mode: both;
-      animation-duration: 1s;
-			@for $i from 1 through 4 {
-				&:nth-of-type(#{$i}) {
-					animation-delay: #{$i}s;
-			}
-		}
-		mat-icon{
-      color: $maincolor;
-			font-size: 5rem;
-		}
-    }
-  }
-}
-
-@keyframes draw {
-
-	100% {
-	  stroke-dashoffset: 0;
-	}
-  
-  }
-@keyframes fade-in {
-	0% { opacity: 0; }
-	100% { opacity: 1; }
-}
 
 @media only screen and (max-width: 375px) {
   .welcome{
     h1{
-      font-size: 10vh;
+      font-size: 15vw;
     }
   }
 }
