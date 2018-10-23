@@ -4,21 +4,19 @@
   font-family: Merkur;
   src: url('../../assets/font/Merkur.otf') format("opentype");
 }
-$mainColor: #FFFFFF;
+$mainTextColor: #FFFFFF;
 
 a {
-  color: $mainColor;
+  color: $mainTextColor;
   margin: 0 5px;
 }
-// .drawerIcon{
-//   margin: 1em;
-//   color: #373D48;
-// }
+.drawerIcon{
+  margin: 1em;
+  color: #373D48;
+}
 .brand-logo{
   font-family: 'Merkur', cursive;
-  color:$mainColor;
-  // border: 10px solid #373D48;
-  // background-color: #373D48;
+  color:$mainTextColor;
   font-size: 5rem;
   border-radius: 100%;
 }
@@ -41,13 +39,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  // img {
-  //   opacity: 1;
-  //   position: absolute;
-  //   height: 90vh;
-  //   width: 100%;
-  //   z-index: -1;
-  // }
 }
 #content{
   margin-top: 0px;

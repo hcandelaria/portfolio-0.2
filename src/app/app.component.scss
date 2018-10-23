@@ -1,5 +1,7 @@
 #container{
     animation: .5s fade-in;
+    min-height: 100%;
+    margin: 0;
 }
 @keyframes fade-in {
     0% { opacity: 0; }
