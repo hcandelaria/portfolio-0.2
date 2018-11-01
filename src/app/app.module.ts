@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { enableProdMode } from '@angular/core';
 import { APP_BASE_HREF } from '@angular/common';
-
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -18,7 +17,8 @@ import {
   MatDialogModule,
   MatCardModule,
   MatGridListModule,
-  MatChipsModule
+  MatChipsModule,
+  MatTabsModule
 
 } from '@angular/material';
 
@@ -40,6 +40,8 @@ import { SkillsPageComponent } from './skills-page/skills-page.component';
 // import { PageNotFoundComponent } from './PageNotFound/Page-Not-Found.component';
 
 enableProdMode();
+
+// angular.module('myModule', ['chart.js']);
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "home", pathMatch: "full"},
@@ -81,7 +83,8 @@ const appRoutes: Routes = [
     MatDialogModule,
     MatCardModule,
     MatGridListModule,
-    MatChipsModule
+    MatChipsModule,
+    MatTabsModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
