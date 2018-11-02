@@ -18,7 +18,8 @@ import {
   MatCardModule,
   MatGridListModule,
   MatChipsModule,
-  MatTabsModule
+  MatTabsModule,
+  MatTooltipModule
 
 } from '@angular/material';
 
@@ -84,7 +85,8 @@ const appRoutes: Routes = [
     MatCardModule,
     MatGridListModule,
     MatChipsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatTooltipModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
