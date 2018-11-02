@@ -31,12 +31,12 @@ export class SkillsPageComponent implements OnInit {
     },
     {
       type: 'Frameworks',
-      icon:'fa-code-branch',
+      icon:'fa-toolbox',
       skills: ['Bootstrap', 'Materializer', 'React', 'Angular', 'Redux']
     },
     {
       type: 'Web Services',
-      icon:'fa-code-branch',
+      icon:'fa-cloud',
       skills: ['AWS', 'EC2', 'Route53', 'RESTful API', 'Nginx']
     },
   ];

@@ -3,6 +3,10 @@
     src: url('../../assets/font/Merkur.otf') format("opentype");
 }
 
+li{
+    font-size: 2rem;
+}
+
 .primaryFont{
     font-family: Merkur;
     // text-transform: uppercase;
@@ -10,12 +14,13 @@
 
 #skills{
     position: relative;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     display: inline-block;
     margin: 16px;
     max-width: 300px;
     height: 85vh;
 }
+
 @media only screen and (min-width: 600px) {
     #skills {
         max-width: 580px;
