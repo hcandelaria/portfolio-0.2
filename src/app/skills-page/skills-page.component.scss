@@ -3,4 +3,16 @@
     background-color: white;
     display: inline-block;
     margin: 16px;
+    max-width: 300px;
+}
+
+@media only screen and (min-width: 600px) {
+    #skills {
+        max-width: 580px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #skills {
+        max-width: 748px;
+    }
 }
