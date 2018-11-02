@@ -22,8 +22,8 @@
   </mat-sidenav>
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"  *ngIf="isHandset$">
-        <mat-icon class="hide-on-large-only" aria-label="Side nav toggle icon">menu</mat-icon>
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button *ngIf="isHandset$">
+        <mat-icon (click)="drawer.toggle()" class="hide-on-large-only" aria-label="Side nav toggle icon">menu</mat-icon>
         <div class="row hide-on-med-and-down">
           <a [routerLink]="['/about']"  routerLinkActive="router-link-active">
             <button mat-stroked-button>About</button>
@@ -45,7 +45,6 @@
       </div>
     </mat-toolbar>
     <div id="backgroudImg">
-      <!-- <img src="./assets/img/bg.jpg"> -->
       <div class="container center-align" id="content">
         <router-outlet></router-outlet>
       </div>
