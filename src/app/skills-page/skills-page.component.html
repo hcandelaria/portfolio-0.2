@@ -1,8 +1,58 @@
-<mat-tab-group mat-align-tabs="center" id="skills">
-  <mat-tab >Content 1</mat-tab>
-  <mat-tab label="FRONT-END">Content 2</mat-tab>
-  <mat-tab label="BACK-END">Content 3</mat-tab>
-  <mat-tab label="SOURCE CONTROL">Content 4</mat-tab>
-  <mat-tab label="FRAMEWORKS">Content 5</mat-tab>
-  <mat-tab label="WEB SERVICES">Content 6</mat-tab>
+<mat-tab-group color="primary" backgroundColor="primary" mat-align-tabs="center" id="skills">
+  <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>
+            <i class="fas fa-infinity"></i>
+        </mat-icon>
+      </ng-template>
+      ALL
+    </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>
+          <i class="fas fa-code"></i>
+      </mat-icon>
+    </ng-template>
+    PROGRAMING LANGUAGE
+  </mat-tab>
+  <mat-tab >
+    <ng-template mat-tab-label>
+      <mat-icon>
+        <i class="fas fa-window-maximize"></i>
+      </mat-icon>
+    </ng-template>
+    FRONT-END
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>
+        <i class="fas fa-database"></i>
+      </mat-icon>
+    </ng-template>
+    BACK-END
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>
+        <i class="fas fa-code-branch"></i>
+      </mat-icon>
+    </ng-template>
+    SOURCE CONTROL
+  </mat-tab>
+  <mat-tab>
+      <ng-template mat-tab-label>
+        <mat-icon>
+          <i class="small material-icons">developer_board</i>
+        </mat-icon>
+      </ng-template>
+      FRAMEWORKS
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>
+        <i class="small material-icons">cloud_queue</i>
+      </mat-icon>
+    </ng-template>
+    WEB SERVICES
+  </mat-tab>
 </mat-tab-group>
