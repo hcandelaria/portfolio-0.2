@@ -21,28 +21,21 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
-      <button type="button" aria-label="Toggle sidenav" mat-icon-button *ngIf="isHandset$">
-        <mat-icon (click)="drawer.toggle()" class="hide-on-large-only" aria-label="Side nav toggle icon">menu</mat-icon>
-        <div class="row hide-on-med-and-down">
-          <a [routerLink]="['/about']"  routerLinkActive="router-link-active">
-            <button mat-stroked-button>About</button>
-          </a>
-          <a [routerLink]="['/skills']"  routerLinkActive="router-link-active">
-            <button mat-stroked-button>Skills</button>
-          </a>
-          <a [routerLink]="['/portfolio']"  routerLinkActive="router-link-active">
-            <button mat-stroked-button>Portfolio</button>
-          </a>
-          <a [routerLink]="['/resume']"  routerLinkActive="router-link-active">
-            <button mat-stroked-button>Resume</button>
-          </a>
+    <mat-toolbar class="container-fluid" color="primary">
+      <mat-toolbar-row>
+        <button class="hide-on-large-only" (click)="drawer.toggle()" type="button" aria-label="Toggle sidenav" mat-icon-button *ngIf="isHandset$">
+          <mat-icon  aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span class="hide-on-med-and-down navLinks">
+          <button [routerLink]="['/about']"  routerLinkActive="router-link-active" mat-stroked-button>About</button>
+          <button [routerLink]="['/skills']"  routerLinkActive="router-link-active" mat-stroked-button>Skills</button>
+          <button [routerLink]="['/portfolio']"  routerLinkActive="router-link-active" mat-stroked-button>Portfolio</button>
+          <button [routerLink]="['/resume']"  routerLinkActive="router-link-active" mat-stroked-button>Resume</button>
+        </span>
+        <div class="center-align brand-logo">
+          <a routerLink="/" class="">HC</a>
         </div>
-      </button>
-      <div class="row">
-        <br>
-        <a routerLink="/" class="brand-logo center-align">HC</a>
-      </div>
+      </mat-toolbar-row>
     </mat-toolbar>
     <div id="backgroudImg">
       <div class="container center-align" id="content">
