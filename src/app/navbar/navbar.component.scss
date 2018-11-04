@@ -29,7 +29,9 @@ mat-toolbar{
     
     a{
       color:$primaryTextColor;
-      font-size: 5rem;  
+      font-size: 5rem;
+      -webkit-animation: flip 3s infinite;
+      animation: 3s flip 3s infinite;
     }
   }
 }
@@ -60,4 +62,24 @@ mat-toolbar{
   justify-content: center;
   min-height: 90vh;
   overflow: hidden;
+}
+
+@-webkit-keyframes flip {
+  from {
+    transform: rotateY(90deg)
+  }
+
+  to {
+    transform: rotateY(0deg)
+  }
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(360deg)
+  }
+
+  to {
+    transform: rotateY(0deg)
+  }
 }
