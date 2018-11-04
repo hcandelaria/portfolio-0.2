@@ -3,10 +3,11 @@
     overflow-y: scroll;
     height: 85vh;
     box-sizing: content-box;
-}
-#portfolio::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+    
+    &::-webkit-scrollbar {
+        width: 0px;
+        background: transparent; /* make scrollbar transparent */
+    }
 }
 
 .project {
