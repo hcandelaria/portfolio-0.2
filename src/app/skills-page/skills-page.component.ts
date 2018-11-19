@@ -12,7 +12,7 @@ export class SkillsPageComponent implements OnInit {
     {
       type: 'Programing Language',
       icon:'fa-code',
-      skills: ['Java','JavaScript', 'C#']
+      skills: ['Java','JavaScript', 'C#', 'Python']
     },
     {
       type: 'Front-end',

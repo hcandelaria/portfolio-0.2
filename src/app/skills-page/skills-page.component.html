@@ -8,9 +8,9 @@
     </ng-template>
     <h1 class="primaryFont">all</h1>
     <ul class="row">
-      <span *ngFor="let technology of technologies">
+      <div *ngFor="let technology of technologies">
         <li class="col s12 m4" *ngFor="let skill of technology.skills">{{skill}}</li>
-      </span>
+      </div>
     </ul>
   </mat-tab>
   <!-- display each tech -->
