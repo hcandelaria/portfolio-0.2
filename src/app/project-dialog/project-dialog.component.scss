@@ -1,5 +1,11 @@
 $primaryColor: #01002a;
-
+span{
+    cursor: pointer;
+    
+    a{
+        color: $primaryColor;
+    }
+}
 .categories{
     a{
         margin: 0 1rem;

@@ -56,6 +56,15 @@ export class PortfolioPageComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
     });
   }
+  closeDialog($event, project): void {
+    const dialogRef = this.dialog.open(ProjectDialogComponent, {
+      data: project,
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
   ngOnInit() {
   }
 
