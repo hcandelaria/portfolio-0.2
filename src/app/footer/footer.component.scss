@@ -1,7 +1,11 @@
+
+// $primarycolor: #373D48;
+$primarycolor: #b62450;
+
 #footer{
     position: fixed;
     bottom: 0;
-    background-color: #373D48;
+    background-color: $primarycolor;
     height: 50px;
     width: 100%;
     z-index: 1;
