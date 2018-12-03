@@ -3,25 +3,25 @@
     <i class="fas fa-times-circle fa-2x right"></i>
   </span>
   <div class="wrapper center-align">
-    <div class="product-img">
-      <img src="./assets/img/{{data.img}}" alt={{data.name}}>
-    </div>
     <div class="product-info">
       <div class="product-text">
         <h1>{{data.name}}</h1>
         <h2></h2>
         <p class="flow-text description left-align">{{data.description}}</p>
       </div>
+      <h5>
+        Stack:
+      </h5>
       <mat-chip-list color="primary">
-        <h5>
-          Stack:
-        </h5>
         <mat-chip *ngFor="let tech of data.stack">{{tech}}</mat-chip>
       </mat-chip-list>
       <br>
       <div class="categories gallery-action">
         <a href={{data.links[0]}} target="_black"><button mat-raised-button color="primary">DEMO</button></a>
         <a href={{data.links[1]}} target="_black"><button mat-raised-button color="primary">GitHub</button></a>
+      </div>
+      <div class="product-img">
+        <img src="./assets/img/{{data.img}}" alt={{data.name}}>
       </div>
 
     </div>
