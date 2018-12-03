@@ -14,5 +14,8 @@ export class ProjectDialogComponent implements OnInit {
 
   ngOnInit() {
   }
+  closeDialog(){
+    this.dialogRef.close()
+  }
 
 }
